@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{359FC693-654A-472C-B57B-E6C1ABE2944B}</ProjectGuid>
+    <ProjectGuid>{87A183C6-8155-48F3-A239-EFC479E7EF5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GildedRose.Test</RootNamespace>
-    <AssemblyName>GildedRose.Test</AssemblyName>
+    <RootNamespace>Example.Test</RootNamespace>
+    <AssemblyName>Example.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -77,17 +77,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ProgramTest.cs" />
+    <Compile Include="FeedsWalrusTest.cs" />
+    <Compile Include="OpensCansTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Values\WalrusTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Example\Example.csproj">
+      <Project>{8847af9f-0dec-499c-92b7-0bc6223cd4e1}</Project>
+      <Name>Example</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GildedRose\GildedRose.csproj">
-      <Project>{bbedf0c1-dd4a-447c-95e0-97dba0897a52}</Project>
-      <Name>GildedRose</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
