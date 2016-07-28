@@ -1,7 +1,7 @@
 ﻿using Xunit;
 
 namespace GildedRose.Test {
-    public class ProgramTest {
+    public class GildedRoseTest {
         [Fact]
         public void ItemHasName() {
             var item = new Item {Name = "Bread"};
