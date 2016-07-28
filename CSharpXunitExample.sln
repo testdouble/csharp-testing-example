@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Test", "Example\Exa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example\Example.csproj", "{8847AF9F-0DEC-499C-92B7-0BC6223CD4E1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnusualSpendingVendor", "UnusualSpendingVendor", "{EA753190-A261-49A8-B1CA-47D5FC33F53B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnusualSpendingVendor", "UnusualSpendingVendor\UnusualSpendingVendor\UnusualSpendingVendor.csproj", "{CA3A2881-9889-4594-B338-C9351EF00F72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{8847AF9F-0DEC-499C-92B7-0BC6223CD4E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8847AF9F-0DEC-499C-92B7-0BC6223CD4E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8847AF9F-0DEC-499C-92B7-0BC6223CD4E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA3A2881-9889-4594-B338-C9351EF00F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3A2881-9889-4594-B338-C9351EF00F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3A2881-9889-4594-B338-C9351EF00F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3A2881-9889-4594-B338-C9351EF00F72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +70,6 @@ Global
 		{AD763AFC-8528-4E91-AA55-14C40F25CA31} = {5872D1A3-5B1F-4621-BC3C-F4A48F24921E}
 		{87A183C6-8155-48F3-A239-EFC479E7EF5C} = {A86C36DE-AC26-4198-B473-5860E83B9D40}
 		{8847AF9F-0DEC-499C-92B7-0BC6223CD4E1} = {A86C36DE-AC26-4198-B473-5860E83B9D40}
+		{CA3A2881-9889-4594-B338-C9351EF00F72} = {EA753190-A261-49A8-B1CA-47D5FC33F53B}
 	EndGlobalSection
 EndGlobal
