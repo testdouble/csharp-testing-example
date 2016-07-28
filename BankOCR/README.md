@@ -1,9 +1,6 @@
-# ExampleCucumber project
+# BankOCR kata
 
-This is a mostly-empty project placed here to be a sandbox for any one-off
-exercises or tests you might like to write. It's preconfigured with Cucumber (SpecFlow) and xUnit.
-
-See `../Example` for an example project that's pre-configured to run normal xUnit tests.
+This project is a placeholder for practicing the Bank OCR kata.
 
 ## Getting started
 
@@ -16,7 +13,7 @@ the tests in Visual Studio with `ReSharper -> Unit Tests -> Run Unit Tests` or w
 
 ## Writing features
 
-Feature files are stored in [ExampleCucumber.Test](ExampleCucumber.Test),
+Feature files are stored in [BankOCR.Test](BankOCR.Test),
 and you can add additional tests by adding additional `Scenario:` constructs to
 the existing feature file or by adding additional feature files with `Add -> New Item -> SpecFlow Feature File`
 
@@ -34,5 +31,12 @@ public void I_Parse_The_File() {
 ```
 
 Step definitions can be defined with the `Given`, `When`, and `Then` method
-attributes in any class you like, though the `ExampleCucumber.Test/WalrusSteps.cs`
+attributes in any class you like, though the `BankOCR.Test/BankOCRSteps.cs`
 class has already been defined for you to start from.
+
+## Resources
+
+For more information, see:
+
+* [Our wiki page on the kata](https://github.com/testdouble/contributing-tests/wiki/Bank-OCR-Kata-in-Cucumber)
+* [The kata's home page](http://www.codingdojo.org/cgi-bin/index.pl?KataBankOCR)
