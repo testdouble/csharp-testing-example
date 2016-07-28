@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife.Test", "GameOfLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife", "GameOfLife\GameOfLife\GameOfLife.csproj", "{C2332476-B8A9-4F9D-8131-38D3C06E3326}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExampleCucumber", "ExampleCucumber", "{958F2542-D2F0-4C04-B84D-EEDFC0115612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleCucumber.Test", "ExampleCucumber\ExampleCucumber.Test\ExampleCucumber.Test.csproj", "{76549773-BD59-49C2-A908-8F931B699BDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,10 @@ Global
 		{C2332476-B8A9-4F9D-8131-38D3C06E3326}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2332476-B8A9-4F9D-8131-38D3C06E3326}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2332476-B8A9-4F9D-8131-38D3C06E3326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76549773-BD59-49C2-A908-8F931B699BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76549773-BD59-49C2-A908-8F931B699BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76549773-BD59-49C2-A908-8F931B699BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76549773-BD59-49C2-A908-8F931B699BDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,5 +111,6 @@ Global
 		{575FCEA9-CA64-4B7B-A2F8-B7FCB5947168} = {C8763C71-D7A9-4AF0-ABF6-A07A0354BA37}
 		{3CF4782E-330B-4C65-9109-0A29F2414FBD} = {FF2325D0-A99A-4AF8-A9A2-41F923250446}
 		{C2332476-B8A9-4F9D-8131-38D3C06E3326} = {FF2325D0-A99A-4AF8-A9A2-41F923250446}
+		{76549773-BD59-49C2-A908-8F931B699BDD} = {958F2542-D2F0-4C04-B84D-EEDFC0115612}
 	EndGlobalSection
 EndGlobal

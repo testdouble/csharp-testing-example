@@ -2,7 +2,7 @@
 
 This project is meant to be used to work on the [Gilded Rose
 kata](https://github.com/testdouble/contributing-tests/wiki/Gilded-Rose-Kata). It
-comes pre-configured with Xunit, and Moq.
+comes pre-configured with xUnit, and Moq.
 
 ```
 .
