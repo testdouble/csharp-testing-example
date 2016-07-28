@@ -11,8 +11,8 @@ set up to import the third-party dependencies needed by the kata and defined in
 ├── README.md
 ├── UnusualSpending
 │   └── TriggersUnusualSpendingEmail.cs
-├── UnusualSpending.Test
-│   └── TriggersUnusualSpendingEmailTest.cs
+└── UnusualSpending.Test
+    └── TriggersUnusualSpendingEmailTest.cs
 ```
 
 To get started, write a Collaboration test for

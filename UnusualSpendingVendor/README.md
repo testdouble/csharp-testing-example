@@ -21,7 +21,7 @@ of the kata).
 ```
 .
 ├── README.md
-├── UnusualSpendingVendor
-│   ├── EmailsUser.cs
-│   └── FetchesUserPaymentsByMonth.cs
+└── UnusualSpendingVendor
+    ├── EmailsUser.cs
+    └── FetchesUserPaymentsByMonth.cs
 ```

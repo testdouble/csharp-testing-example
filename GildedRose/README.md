@@ -10,6 +10,6 @@ comes pre-configured with Xunit, and Moq.
 ├── GildedRose
 │   ├── GildedRose.cs
 │   └── Item.cs
-├── GildedRose.Test
-│   └── GildedRoseTest.cs
+└── GildedRose.Test
+    └── GildedRoseTest.cs
 ```
