@@ -8,7 +8,7 @@ namespace Selenium.Test.Support {
     public class Browser {
         public static readonly int DefaultTimeout = 5;
         public static IWebDriver Driver;
-        public static readonly string BrowserName = "firefox";
+        public static readonly string BrowserName = "chrome";
 
         public static IWebDriver Launch() {
             Driver = CreateDriver();
