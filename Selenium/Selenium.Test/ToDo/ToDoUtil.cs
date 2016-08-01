@@ -1,4 +1,5 @@
-﻿using Selenium.Test.Support;
+﻿using System;
+using Selenium.Test.Support;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 
@@ -13,7 +14,7 @@ namespace Selenium.Test.ToDo {
         }
 
         public static IWebElement ToDoAt(int index, bool immediate) {
-            var selector = "#todo-list li:nth-child(" + "index + 1" + ")";
+            var selector = "#todo-list li:nth-child(" + (index + 1) + ")";
             return immediate ? Browser.AnyImmediate(selector) : Browser.Any(selector);
         }
 
