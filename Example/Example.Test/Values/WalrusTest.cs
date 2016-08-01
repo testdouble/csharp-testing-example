@@ -4,25 +4,25 @@ using Xunit;
 namespace Example.Test.Values {
     public class WalrusTest {
 
-        Walrus subject = new Walrus();
+        private readonly Walrus _subject = new Walrus();
 
         [Fact]
         public void WrongFood() {
             var someFood = new WalrusFood();
             var moreFood = new WalrusFood();
 
-            subject.AddToStomach(someFood);
+            _subject.AddToStomach(someFood);
 
-            Assert.False(subject.HasEaten(moreFood));
+            Assert.False(_subject.HasEaten(moreFood));
         }
 
         [Fact]
         public void RightFood() {
             var food = new WalrusFood();
 
-            subject.AddToStomach(food);
+            _subject.AddToStomach(food);
 
-            Assert.True(subject.HasEaten(food));
+            Assert.True(_subject.HasEaten(food));
         }
     }
 }
