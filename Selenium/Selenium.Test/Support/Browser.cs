@@ -50,7 +50,7 @@ namespace Selenium.Test.Support {
             if (BrowserName.Equals("msie")) {
                 return new InternetExplorerDriver();
             }
-            throw new ArgumentException($"Unrecognized browser: {BrowserName}");
+            throw new ArgumentException("Unrecognized browser: " + BrowserName);
         }
     }
 }

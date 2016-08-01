@@ -1,4 +1,4 @@
-﻿using static Selenium.Test.ToDo.ToDoUtil;
+﻿using Selenium.Test.ToDo;
 using System;
 using Xunit;
 using OpenQA.Selenium;
@@ -18,47 +18,47 @@ namespace Selenium.Test.ToDo {
 
         [Fact]
         public void CreateToDo() {
-            AddToDo("Mow the Lawn");
+            ToDoUtil.AddToDo("Mow the Lawn");
 
-            Assert.Equal("Mow the Lawn", ToDoAt(0).Text);
+            Assert.Equal("Mow the Lawn", ToDoUtil.ToDoAt(0).Text);
         }
 
         [Fact]
         public void CreateTwoToDos() {
-            AddToDo("Shower");
-            AddToDo("Get dressed");
+            ToDoUtil.AddToDo("Shower");
+            ToDoUtil.AddToDo("Get dressed");
 
-            Assert.Equal("Shower", ToDoAt(0).Text);
-            Assert.Equal("Get dressed", ToDoAt(1).Text);
+            Assert.Equal("Shower", ToDoUtil.ToDoAt(0).Text);
+            Assert.Equal("Get dressed", ToDoUtil.ToDoAt(1).Text);
         }
 
         [Fact]
         public void MarksAToDoDone() {
-            AddToDo("Eat food");
-            Assert.False(IsDone(ToDoAt(0)));
+            ToDoUtil.AddToDo("Eat food");
+            Assert.False(ToDoUtil.IsDone(ToDoUtil.ToDoAt(0)));
 
-            MarkToDoDone(ToDoAt(0));
+            ToDoUtil.MarkToDoDone(ToDoUtil.ToDoAt(0));
 
-            Assert.True(IsDone(ToDoAt(0)));
+            Assert.True(ToDoUtil.IsDone(ToDoUtil.ToDoAt(0)));
         }
 
         [Fact]
         public void CanDeleteAToDo() {
-            AddToDo("Thing");
+            ToDoUtil.AddToDo("Thing");
 
-            DeleteToDo(ToDoAt(0));
+            ToDoUtil.DeleteToDo(ToDoUtil.ToDoAt(0));
 
-            Assert.Null(ToDoAt(0, true));
+            Assert.Null(ToDoUtil.ToDoAt(0, true));
         }
 
         [Fact]
         public void ClearCompletedToDos() {
-            AddToDo("Do stuff");
-            MarkToDoDone(ToDoAt(0));
+            ToDoUtil.AddToDo("Do stuff");
+            ToDoUtil.MarkToDoDone(ToDoUtil.ToDoAt(0));
 
-            ClearDoneToDos();
+            ToDoUtil.ClearDoneToDos();
 
-            Assert.Null(ToDoAt(0, true));
+            Assert.Null(ToDoUtil.ToDoAt(0, true));
         }
     }
 }

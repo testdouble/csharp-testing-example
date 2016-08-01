@@ -1,4 +1,4 @@
-﻿using static Selenium.Test.ToDo.ToDoUtil;
+﻿using Selenium.Test.ToDo;
 using System;
 using OpenQA.Selenium;
 using Xunit;
@@ -21,12 +21,12 @@ namespace Selenium.Test.ToDo {
 
         [When(@"^I type the todo ""([^\""]*)""$")]
         public void I_Type_The_Todo(string todoText) {
-            AddToDo(todoText);
+            ToDoUtil.AddToDo(todoText);
         }
 
         [Then(@"^todo list item (\d+) has text ""([^\""]*)""$")]
         public void Todo_List_Item_Has_Text(int ordinal, string expected) {
-            Assert.Equal(expected, ToDoAt(ordinal - 1).Text);
+            Assert.Equal(expected, ToDoUtil.ToDoAt(ordinal - 1).Text);
         }
     }
 }
