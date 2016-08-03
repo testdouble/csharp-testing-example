@@ -19,8 +19,8 @@ the existing feature file or by adding additional feature files with `Add -> New
 
 ## Implementing step definitions
 
-When you run the tests, SpecFlow will output method stubs of step definitions
-to implement the tests like this:
+You can have SpecFlow generate your step definitions by right-clicking on your feature file in the editor
+and then clicking "Generate Step Definitions". [SpecFlow Getting Started Guide](http://www.specflow.org/getting-started/)
 
 ```
 [When(@"^I parse the file$")]
