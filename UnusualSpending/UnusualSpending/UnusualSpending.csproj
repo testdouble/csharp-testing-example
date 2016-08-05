@@ -40,8 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\IBuildEmail.cs" />
+    <Compile Include="Commands\ICalculatesUnusualSpending.cs" />
+    <Compile Include="Commands\IEmailsUsers.cs" />
+    <Compile Include="Commands\IFetchPayments.cs" />
+    <Compile Include="Commands\IGetsCurrentDate.cs" />
     <Compile Include="TriggersUnusualSpendingEmail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Values\Category.cs" />
+    <Compile Include="Values\Email.cs" />
+    <Compile Include="Values\Payment.cs" />
+    <Compile Include="Values\UnusualPayments.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\UnusualSpendingVendor\UnusualSpendingVendor\UnusualSpendingVendor.csproj">
